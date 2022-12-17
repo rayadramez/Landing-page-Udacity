@@ -2,11 +2,13 @@
 
 ## Table of Contents
 
-* [Decription](#descriptions)
-*
+* [Project Title](#projectTitle)
+* [Page Content](#pageContent)
 
-## Decription
+## Project Title
+Landing Page
 
+## Page Content
 This is the first project to review from Udacity-review-center.
 The project is called landing-page.
 
