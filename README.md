@@ -4,7 +4,7 @@
 
 ### [Project Title](#projectTitle)
 ### [Page Content](#pageContent)
-### [Usage](#usage)
+### [Usage](#usageAndDom)
 
 ## Project Title
 Landing Page
