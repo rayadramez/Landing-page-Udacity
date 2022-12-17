@@ -18,29 +18,29 @@ The whole project consists of :
 ## Usage and DOM
 The index.html has the following :
 1. header Tag, that has : 
-	1. nav Tag,  that has :
-		1. ul Tag, that has : 
-			1. li Tag (**_created dynamically_**), for section 1
-			2. li Tag (**_created dynamically_**), for section 2
-			3. li Tag (**_created dynamically_**), for section 3
-			4. li Tag (**_created dynamically_**), for section 4
+	- nav Tag,  that has :
+		- ul Tag, that has : 
+			- li Tag (**_created dynamically_**), for section 1
+			- li Tag (**_created dynamically_**), for section 2
+			- li Tag (**_created dynamically_**), for section 3
+			- li Tag (**_created dynamically_**), for section 4
 2. main Tag, that has :
-	1. header Tag, that has :
-		1. h1 Tag, content header
-	2. section Tag, with id = #section1, that has :
-		1. div Tag
-		2. p Tag
-		3. p Tag
+	- header Tag, that has :
+		- h1 Tag, content header
+	- section Tag, with id = #section1, that has :
+		- div Tag
+		- p Tag
+		- p Tag
 	3. section Tag, with id = #section2, that has :
-		1. div Tag
-		2. p Tag
-		3. p Tag
+		- div Tag
+		- p Tag
+		- p Tag
 	4. section Tag, with id = #section3, that has :
-		1. div Tag
-		2. p Tag
-		3. p Tag 
+		- div Tag
+		- p Tag
+		- p Tag 
 	5. section Tag (**_created dynamically_**), with id = #section4, that has :
-		1. div Tag
-		2. p Tag
-		3. p Tag
+		- div Tag
+		- p Tag
+		- p Tag
 3. footer Tag
