@@ -3,8 +3,8 @@
 ## Table of Contents
 
 * [Project Title](#projectTitle)
-### [Page Content](#pageContent)
-### [Usage](#usage)
+* [Page Content](#pageContent)
+* [Usage](#usage)
 
 ## Project Title
 Landing Page
