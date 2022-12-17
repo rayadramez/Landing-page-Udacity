@@ -20,10 +20,10 @@ The index.html has the following :
 1. header Tag, that has : 
 	1. nav Tag,  that has :
 		1. ul Tag, that has : 
-			1. li Tag, for section 1
-			2. li Tag, for section 2
-			3. li Tag, for section 3
-			4. li Tag, for section 4
+			1. li Tag (**_created dynamically_**), for section 1
+			2. li Tag (**_created dynamically_**), for section 2
+			3. li Tag (**_created dynamically_**), for section 3
+			4. li Tag (**_created dynamically_**), for section 4
 2. main Tag, that has :
 	1. header Tag, that has :
 		1. h1 Tag, content header
@@ -42,4 +42,5 @@ The index.html has the following :
 	5. section Tag (**_created dynamically_**), with id = #section4, that has :
 		1. div Tag
 		2. p Tag
-		3. p Tag 
+		3. p Tag
+3. footer Tag
