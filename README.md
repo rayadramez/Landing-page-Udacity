@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* [Project Title](#projectTitle)
-* [Page Content](#pageContent)
-* [Usage](#usage)
+### [Project Title](#projectTitle)
+### [Page Content](#pageContent)
+### [Usage](#usage)
 
 ## Project Title
 Landing Page
@@ -31,16 +31,18 @@ The index.html has the following :
 		- div Tag
 		- p Tag
 		- p Tag
-	3. section Tag, with id = #section2, that has :
+	- section Tag, with id = #section2, that has :
 		- div Tag
 		- p Tag
 		- p Tag
-	4. section Tag, with id = #section3, that has :
+	- section Tag, with id = #section3, that has :
 		- div Tag
 		- p Tag
 		- p Tag 
-	5. section Tag (**_created dynamically_**), with id = #section4, that has :
+	- section Tag (**_created dynamically_**), with id = #section4, that has :
 		- div Tag
 		- p Tag
 		- p Tag
 3. footer Tag
+
+
