@@ -21,11 +21,11 @@ The index.html has the following :
 	1. nav Tag,  that has :
 		1. ul Tag, that has : 
 			1. li Tag, for section 1
-			1-1-1-2- li Tag, for section 2
-			1-1-1-3- li Tag, for section 3
-			1-1-1-4- li Tag, for section 4
-2- main Tag, that has :
-	2-1- header Tag, that has :
-		2-1-1- h1 Tag, content header
-	2-2- section Tag, with id = #section1, that has :
-		2-2-1- 
+			2. li Tag, for section 2
+			3. li Tag, for section 3
+			4. li Tag, for section 4
+2. main Tag, that has :
+	1. header Tag, that has :
+		1. h1 Tag, content header
+	2. section Tag, with id = #section1, that has :
+		1. 
