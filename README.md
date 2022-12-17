@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-### [Project Title](#projectTitle)
+*###* [Project Title](#projectTitle)
 ### [Page Content](#pageContent)
-### [Usage](#usageAndDom)
+### [Usage](#usage)
 
 ## Project Title
 Landing Page
