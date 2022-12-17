@@ -28,4 +28,4 @@ The index.html has the following :
 	2-1- header Tag, that has :
 		2-1-1- h1 Tag, content header
 	2-2- section Tag, with id = #section1, that has :
-		2-2-1- 
+		2-2-1- fggggggggg
