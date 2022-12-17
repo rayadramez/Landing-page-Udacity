@@ -18,9 +18,9 @@ The whole project consists of :
 ## Usage and DOM
 The index.html has the following :
 1. header Tag, that has : 
-	1.1. nav Tag,  that has :
-		1-1-1- ul Tag, that has : 
-			1-1-1-1- li Tag, for section 1
+	1. nav Tag,  that has :
+		1. ul Tag, that has : 
+			1. li Tag, for section 1
 			1-1-1-2- li Tag, for section 2
 			1-1-1-3- li Tag, for section 3
 			1-1-1-4- li Tag, for section 4
