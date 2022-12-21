@@ -131,7 +131,8 @@ function addListitemsClickEvents() {
                 // If Yes, then
                 // Add a click event to that listItem 'li' Tag
                 // and a function that just scroll to the appropiate 'section'Tag
-                listItem.addEventListener('click', function(){
+                listItem.addEventListener('click', function(event){
+                    event.preventDefault();
                     sectionEle.scrollIntoView();
                 });
             }
@@ -180,11 +181,22 @@ function setActiveClass(){
     }
 }
 
+//This function is to add a scroll behavior to html Tag to smooth
+function addScrollNehavior(){
+    // Get the html Tag
+    const htmlTag = document.querySelector('html');
+    // Add a style to html 
+    htmlTag.style.scrollBehavior = 'smooth';
+}
+
 /**
  * End Main Functions
  * Begin Events
  * 
 */
+
+// Add scroll behavior style to html Tag
+addScrollNehavior();
 
 // Build menu 
 //create section 4 'section' Tag and add it to the DOM
