@@ -92,8 +92,14 @@ function createListItem(){
     const unOrderedList = document.querySelector('#navbar__list');
     // Check if the (unOrderedList) 'ul' is not null and is not undefined
     if(unOrderedList !== null && unOrderedList !== undefined){
-        // loop four times and exact four times only, to create for each loop a 'li' Tag as a child for 'ul' Tag
-        for(let i = 1; i <= 4; i++){
+        // Get all sections Tag
+        const allSections = document.getElementsByTagName('section');
+        // Check is the secions retrived is not null and not undefined
+        if(allSections !== null && allSections !== undefined){
+            // Check if the count of the sections retrevied is greater than 0
+            if(allSections.length > 0){
+                // Loop for each sections retrevied
+                for(let i = 1; i <= allSections.length; i++){
             // Create a listItem 'li' Tag
             const listItem = document.createElement('li');
             // Set the 'textContent' for created the 'li' Tag
@@ -104,6 +110,8 @@ function createListItem(){
             listItem.className = 'menu__link';
             // Add the created 'li' to the (unOrderedList) 'ul' Tag
             unOrderedList.appendChild(listItem);
+        }
+    }
         }
     }
 }
@@ -133,7 +141,7 @@ function addListitemsClickEvents() {
                 // and a function that just scroll to the appropiate 'section'Tag
                 listItem.addEventListener('click', function(event){
                     event.preventDefault();
-                    sectionEle.scrollIntoView();
+                    sectionEle.scrollIntoView({behavior: "smooth"});
                 });
             }
             count = count + 1;
@@ -148,12 +156,39 @@ function addActiveClass(sectionID){
     const sectionSelected = document.getElementById(sectionID);
     // Get the section Top from the viewport by using 'getBoundingClientRect()' mothod
     // and use the 'top' property
-    const sectionTop = sectionSelected.getBoundingClientRect().top;
-    // If the top is reached to the top of the viewport, then it will be equal to zero
-    if(sectionTop === 0){
+    const sectionRect = sectionSelected.getBoundingClientRect(); 
+    if(sectionRect.top <= 150 && sectionRect.bottom >= 150){
         // If yes, then add a class called 'active-class'
         sectionSelected.classList.add('active-class');
+        removeHighlight();
     }
+}
+
+function setHighlight(){
+    const menuLinks = document.getElementsByClassName('menu__link');
+    if(menuLinks !== null && menuLinks !== undefined){
+        let count = 1;
+        for (const listItem of menuLinks) {
+            listItem.style.backgroundColor = '#333';
+        }
+    }
+}
+
+// This function is to remove all style added to 'li' Tag
+function removeHighlight() {
+  const menuLinks = document.getElementsByClassName('menu__link');
+  if (menuLinks !== null && menuLinks !== undefined) {
+    for (const listItem of menuLinks) {
+      listItem.removeAttribute('style');
+    }
+  }
+}
+
+function removeActiveClass(section){
+    // remove class from the classList which is called 'your-active-class' (that is set in the project as initial value)
+    section.classList.remove('your-active-class');
+    // remove class from the classList which is called 'active', if exists.
+    section.classList.remove('active-class');
 }
 
 // This function is used to set the active class and remove first all class of all sections
@@ -167,10 +202,8 @@ function setActiveClass(){
         let count = 1;
         // Loop for allSections
         for(const section of allSections){
-            // remove class from the classList which is called 'your-active-class' (that is set in the project as initial value)
-            section.classList.remove('your-active-class');
-            // remove class from the classList which is called 'active', if exists.
-            section.classList.remove('active');
+            // Remove all active classes
+            removeActiveClass(section);
             // set the sectionID as follows
             const sectionID = 'section' + count;
             // Send this sectionID to addActiveClass function
@@ -181,29 +214,17 @@ function setActiveClass(){
     }
 }
 
-//This function is to add a scroll behavior to html Tag to smooth
-function addScrollNehavior(){
-    // Get the html Tag
-    const htmlTag = document.querySelector('html');
-    // Add a style to html 
-    htmlTag.style.scrollBehavior = 'smooth';
-}
-
 /**
  * End Main Functions
  * Begin Events
  * 
 */
 
-// Add scroll behavior style to html Tag
-addScrollNehavior();
-
 // Build menu 
 //create section 4 'section' Tag and add it to the DOM
 createSection('section4');
 // create the 4 list items 'li' Tag, as nav menu
 createListItem();
-
 // Scroll to section on link click
 // add 'click' event to 'li' Tag to listen for clicks and scroll to the appropriate 'section' Tag
 addListitemsClickEvents();
@@ -211,4 +232,3 @@ addListitemsClickEvents();
 // Set sections as active
 // add 'scroll' to document to listen for scrolling to add active class to each section reached the top of the viewport
 document.addEventListener('scroll', setActiveClass);
-

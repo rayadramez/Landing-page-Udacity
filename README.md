@@ -6,7 +6,7 @@
 * [Introduction](#introduction)
 * [Page Content](#pageContent)
 * [Usage](#usage)
-* [Development & Technologies](#development) 
+* [Development & Languages](#development) 
 
 ## Project Title
 Landing Page
@@ -52,7 +52,7 @@ The index.html has the following :
 		- p Tag
 3. footer Tag
 
-## Development & Technologies
+## Development & Languages
 Tech. Used are : HTML - CSS - JavaScript
 
 1. In app.js : 
