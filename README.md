@@ -53,6 +53,8 @@ The index.html has the following :
 3. footer Tag
 
 ## Development & Technologies
+Tech. Used are : HTML - CSS - JavaScript
+
 1. In app.js : 
 	1. Four navigation list items 'li' was made in the header unordered list 'ul'
 		- Each listItem 'li' is to scroll to the appropriate 'section'
